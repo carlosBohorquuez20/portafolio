@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe'
 import Skills  from './components/Skills'
 import MyWorks from './components/MyWorks'
 import Footer from './components/Footer'
+import "animate.css";
 function App() {
 
 

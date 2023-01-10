@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/myWorks.css";
 import pokedex from "../img/pokedex.png";
 import ecommerceRact from "../img/ecommerce.png";
@@ -17,8 +17,19 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 
 const MyWorks = () => {
+
+  useEffect(() => {
+    window.sr = ScrollReveal();
+    sr.reveal(".works-box", {
+      duration: 3000,
+      origin: "top",
+      distance: "-100px",
+    });
+  }, []);
+
+
   return (
-    <div className="works-box">
+    <div className="works-box ">
       <div className="works-text">
         <h2>
           My recent <span className="other-color">works</span>

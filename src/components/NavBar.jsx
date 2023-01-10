@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/navBar.css";
 const NavBar = () => {
   const [menuMobile, setMenuMobile] = useState(false);
 
+ 
+  useEffect (() => {
+    window.sr = ScrollReveal();
+    sr.reveal('.nav',{
+      duration:3000,
+      origin: 'bottom',
+      distance: '-100px'
+    });
+  },[])
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-desktop">
         <p>Carlos Bohorquez</p>
         <div>

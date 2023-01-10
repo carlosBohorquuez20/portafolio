@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import person1 from "../img/person1.png";
 import arrow1 from "../img/arrow1.png";
 import technologies from "../img/tecnologias.png";
 import shadow1 from "../img/shadow2.png";
 import "../styles/home.css";
+
 const Home = () => {
+
+  useEffect(() => {
+    window.sr = ScrollReveal();
+    sr.reveal(".home-container", {
+      duration: 3000,
+      origin: "left",
+      distance: "-100px",
+    });
+  }, []);
+
+
   return (
     <div className="home-container">
       <div className="left-home">
@@ -19,7 +31,6 @@ const Home = () => {
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a href="">
-            {" "}
             <i className="fa-brands fa-github"></i>
           </a>
           <button>

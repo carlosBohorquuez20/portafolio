@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/skills.css";
 import html from "../img/html-icon.png";
 import js from "../img/js-icon.png";
@@ -11,11 +11,22 @@ import reactRedux from "../img/reactRedux.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 // Import Swiper styles
+import "animate.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Skills = () => {
+
+  useEffect(() => {
+    window.sr = ScrollReveal();
+    sr.reveal(".skills-box", {
+      duration: 3000,
+      origin: "right",
+      distance: "-100px",
+    });
+  }, []);
+
   return (
     <div className="skills-box">
       <div className="text-skills">
@@ -25,7 +36,7 @@ const Skills = () => {
       </div>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={10}
         slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
@@ -34,10 +45,9 @@ const Skills = () => {
         }}
         breakpoints={{
           0:{slidesPerView: 1},
-          520:{slidesPerView: 2},
+          520:{slidesPerView: 1},
           768:{slidesPerView: 3},
           1000:{slidesPerView: 4},
-
         }}
         navigation={true}
         modules={[Pagination, Navigation]}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/aboutMe.css";
 import person2 from "../img/person2.png";
 import image from "../img/image.png";
@@ -7,6 +7,15 @@ import lightbulb from "../img/lightbulb.png";
 import shadow2 from "../img/shadow2.png";
 import note from "../img/note-music.png";
 const AboutMe = () => {
+  useEffect(() => {
+    window.sr = ScrollReveal();
+    sr.reveal(".about-container", {
+      duration: 3000,
+      origin: "top",
+      distance: "-100px",
+    });
+  }, []);
+
   return (
     <div className="about-container">
       <div className="about-left">
@@ -19,7 +28,7 @@ const AboutMe = () => {
           quam at, consequatur culpa iusto repellat, cum praesentium magni nulla
           voluptate nostrum!
         </p>
-        <div className="left-image">
+        <div className="left-image ">
         <img src={arrow3} alt="arrow" className="arrow3"/>
         <img src={lightbulb} alt="bulb" className="bulb"/>
         <img src={note} alt="note" className="note"/>
