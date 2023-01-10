@@ -6,6 +6,8 @@ nav {
   position: fixed;
   background: #222831;
   padding: 20px 60px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
@@ -22,6 +24,7 @@ nav {
 }
 
 .nav-desktop {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

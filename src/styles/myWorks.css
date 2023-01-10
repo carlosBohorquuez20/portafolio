@@ -3,6 +3,7 @@
   height: 1024px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
   padding-top: 50px;
@@ -88,6 +89,7 @@
 .img-categories {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
   gap: 30px;
 }
@@ -113,5 +115,46 @@
   align-items: center;
   background: rgba(57, 62, 70, 0.5);
   backdrop-filter: blur(2px);
-  border-radius: 16px;
+ 
 }
+
+.category-box img{
+  width: 100%;
+ 
+  aspect-ratio: 3/2;
+  object-fit: cover 100%;
+}
+
+.mySwiperWork {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.work-slide{
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+
+@media (max-width: 480px) {
+  .work-slide{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+.work-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover 100%;
+}
+
