@@ -4,6 +4,7 @@ import arrow1 from "../img/arrow1.png";
 import technologies from "../img/tecnologias.png";
 import shadow1 from "../img/shadow2.png";
 import "../styles/home.css";
+import cv from "../cv/CV_Carlos_Bohorquez_Parra.pdf";
 
 const Home = () => {
 
@@ -27,15 +28,15 @@ const Home = () => {
           </h1>
         </div>
         <div className="buttons-home">
-          <a href="">
+          <a href="https://www.linkedin.com/in/carlos-bohorquez-parra-711b5224b/" target="_blank">
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="">
+          <a href="https://github.com/carlosBohorquuez20" target="_blank">
             <i className="fa-brands fa-github"></i>
           </a>
-          <button>
+          <a href={cv} dowload="Slee Dw" className="btn-dowload">
             Download CV <i className="fa-solid fa-download"></i>
-          </button>
+          </a>
         </div>
         <div className="arrow2">
           <i className="fa-solid fa-arrow-down"></i>

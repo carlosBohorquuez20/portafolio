@@ -118,7 +118,7 @@
   color: white;
 }
 
-.buttons-home button {
+.btn-dowload {
   width: 223px;
   height: 47px;
   padding: 10px 32px;
@@ -133,12 +133,15 @@
   justify-content: center;
   gap: 20px;
   border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px !important;
 }
 
 
 
 
-.buttons-home button:hover {
+.btn-dowload:hover {
   background: rgba(234, 238, 245, 0.75);
   backdrop-filter: blur(5px);
   color: black;
