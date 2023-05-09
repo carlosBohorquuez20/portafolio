@@ -4,6 +4,7 @@ import html from "../img/html-icon.png";
 import js from "../img/js-icon.png";
 import css from "../img/css-icon.png";
 import git from "../img/git-icon.png";
+import tailwind from "../img/tailwindCss.png";
 import reactJs from "../img/reactJs.png";
 import reactRouter from "../img/react-router.png";
 import reactRedux from "../img/reactRedux.png";
@@ -28,10 +29,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-box">
+    <div className="skills-box" id="skills">
       <div className="text-skills">
         <h2>
-          My <span className="other-color">Skills</span>
+          Mis <span className="other-color">Habilidades</span>
         </h2>
       </div>
       <Swiper
@@ -88,6 +89,11 @@ const Skills = () => {
             <div className="skills-icons">
               <img src={reactRouter} alt="React Router" />
               <p>React Router</p>
+            </div>
+          </SwiperSlide>  <SwiperSlide>
+            <div className="skills-icons">
+              <img src={tailwind} alt="React Router" />
+              <p>Tailwind CSS</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>

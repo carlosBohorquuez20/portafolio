@@ -30,10 +30,18 @@ nav {
   align-items: center;
 }
 
+.nav-desktop i{
+  font-size: 50px;
+}
+
 @media (max-width: 480px) {
   .nav-desktop {
     display: none;
   }
+}
+
+.nav-desktop h2{
+ color: white;
 }
 
 nav p {

@@ -17,16 +17,13 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="about-left">
         <h2>
-          About <span className="text-color">Me</span>
+         Sobre <span className="text-color">mi</span>
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          ratione tenetur, vel voluptates laboriosam enim soluta corporis earum
-          quam at, consequatur culpa iusto repellat, cum praesentium magni nulla
-          voluptate nostrum!
+        Soy un desarrollador web front-end, me encargo de diseñar y desarrollar la interfaz de usuario de un sitio web o aplicación web. Utilizo lenguajes como HTML, CSS y JavaScript, así como el framework de React JS para crear elementos visuales interactivos y diseños atractivos.
         </p>
         <div className="left-image ">
         <img src={arrow3} alt="arrow" className="arrow3"/>

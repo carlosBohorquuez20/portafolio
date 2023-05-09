@@ -1,14 +1,18 @@
 .home-container {
   width: 100%;
+  min-width: 1250px;
   height: 1024px;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(238, 238, 238, 0.1);
   padding-left: 120px;
 }
 
+
 @media (max-width: 480px) {
   .home-container {
     width: 100%;
+    min-width: 0px;
     height: auto;
     display: flex;
     border-bottom: 1px solid rgba(238, 238, 238, 0.1);
@@ -71,7 +75,7 @@
 .text-arrow h1 {
   color: white;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 75.30px;
   margin: 0;
   padding: 0;
  
@@ -84,6 +88,7 @@
     font-size: 28px;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
 }
 
@@ -98,6 +103,7 @@
   align-items: center;
   gap: 20px;
   transform: translateY(-20px);
+  padding-top: 10px;
 }
 
 @media (max-width: 480px) {
@@ -160,7 +166,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
+
+
 
 @media (max-width: 480px) {
   .arrow2 {
@@ -224,9 +233,9 @@
 @media (max-width: 480px) {
   .person1-img {
     width: 330px;
-    height: 352.65px;
+    height: 310.65px;
     position: absolute;
-    top: 35px;
+    top: 70px;
     left: 40px;
     z-index: 9;
   }

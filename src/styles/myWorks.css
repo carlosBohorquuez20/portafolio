@@ -1,13 +1,9 @@
 .works-box {
   width: 100%;
   height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
   padding-top: 50px;
   padding-left: 120px;
+  margin-bottom: 50px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.1);
 }
 
@@ -49,8 +45,9 @@
   .works-text h2 {
     font-weight: 700;
     font-size: 40px;
-    line-height: 96px;
+    line-height: 66px;
     color: white;
+    text-align: center;
   }
 }
 
@@ -120,7 +117,6 @@
 
 .category-box img{
   width: 100%;
- 
   aspect-ratio: 3/2;
   object-fit: cover 100%;
 }
@@ -133,12 +129,33 @@
 }
 
 .work-slide{
-  background-position: center;
-  background-size: cover;
   width: 400px;
   height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
 }
 
+.pages-links{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: rgba(57, 62, 70, 0.5);
+}
+
+
+.pages-links i{
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 @media (max-width: 480px) {
   .work-slide{

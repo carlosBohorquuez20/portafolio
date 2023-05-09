@@ -3,25 +3,25 @@ import "../styles/navBar.css";
 const NavBar = () => {
   const [menuMobile, setMenuMobile] = useState(false);
 
- 
-  useEffect (() => {
+
+  useEffect(() => {
     window.sr = ScrollReveal();
-    sr.reveal('.nav',{
-      duration:3000,
+    sr.reveal('.nav', {
+      duration: 3000,
       origin: 'bottom',
       distance: '-100px'
     });
-  },[])
+  }, [])
+
   return (
     <nav className="nav">
       <div className="nav-desktop">
-        <p>Carlos Bohorquez</p>
+        <h2><i class="fa-solid fa-laptop-code"></i></h2>
         <div>
-          <a href="">Home</a>
-          <a href="">About Me</a>
-          <a href="">Skills</a>
-          <a href="">My works</a>
-          <a href="">Contact</a>
+          <a href="#home">Inicio</a>
+          <a href="#about">Sobre mi</a>
+          <a href="#skills">Mis habilidades</a>
+          <a href="#myWorks">Mis trabajos</a>
         </div>
       </div>
       <div className="menu-mobile" onClick={() => setMenuMobile(true)}>
@@ -34,11 +34,10 @@ const NavBar = () => {
           <div className="close" onClick={() => setMenuMobile(false)}>
             <i class="fa-solid fa-xmark"></i>
           </div>
-          <a href="">Home</a>
-          <a href="">About Me</a>
-          <a href="">Skills</a>
-          <a href="">My works</a>
-          <a href="">Contact</a>
+          <a href="#home">Inicio</a>
+          <a href="#about">Sobre mi</a>
+          <a href="#skills">Mis habilidades</a>
+          <a href="#myWorks">Mis trabajos</a>
         </div>
       </div>
     </nav>

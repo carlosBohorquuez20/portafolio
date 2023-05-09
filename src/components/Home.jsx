@@ -7,7 +7,6 @@ import "../styles/home.css";
 import cv from "../cv/CV_Carlos_Bohorquez_Parra.pdf";
 
 const Home = () => {
-
   useEffect(() => {
     window.sr = ScrollReveal();
     sr.reveal(".home-container", {
@@ -17,30 +16,38 @@ const Home = () => {
     });
   }, []);
 
-
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <div className="left-home">
         <div className="text-arrow">
           <img src={arrow1} alt="arrow" />
           <h1>
-            Desarrollador <span className="other-color">Front-End</span>
+            Carlos Bohorquez{" "}
+            <span className="other-color">Desarrollador Front-End</span>
           </h1>
         </div>
         <div className="buttons-home">
-          <a href="https://www.linkedin.com/in/carlos-bohorquez-parra-711b5224b/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/carlos-bohorquez-parra-711b5224b/"
+            target="_blank"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a href="https://github.com/carlosBohorquuez20" target="_blank">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href={cv} dowload="Slee Dw" className="btn-dowload">
-            Download CV <i className="fa-solid fa-download"></i>
+          <a
+            href={cv}
+            target="_blank"
+            dowload="CV Carlos Bohorquez"
+            className="btn-dowload"
+          >
+            Descargar CV <i className="fa-solid fa-download"></i>
           </a>
         </div>
-        <div className="arrow2">
+        <a className="arrow2" href="#about">
           <i className="fa-solid fa-arrow-down"></i>
-        </div>
+        </a>
       </div>
       <div className="right-home">
         <img
